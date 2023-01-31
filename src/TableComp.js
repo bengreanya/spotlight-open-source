@@ -1,6 +1,6 @@
 import React from 'react';
 import { Table, Column, HeaderCell, Cell } from 'rsuite-table';
-import 'rsuite-table/lib/less/index.less';
+import 'rsuite-table/dist/css/rsuite-table.css';
 const dataList = [
   { id: 1, name: 'me', email: 'me@email.com', location: 'oregon' },
   { id: 2, name: 'you', email: 'you@email.com', location: 'florida' },
@@ -8,5 +8,24 @@ const dataList = [
 ];
 
 export default function TableComp() {
-  return <Table data={dataList}></Table>;
+  return (
+    <Table data={dataList}>
+      <Column width={100}>
+        <HeaderCell>ID</HeaderCell>
+        <Cell dataKey="id" />
+      </Column>
+      <Column width={100}>
+        <HeaderCell>Name</HeaderCell>
+        <Cell dataKey="name" />
+      </Column>
+      <Column width={100}>
+        <HeaderCell>Email</HeaderCell>
+        <Cell dataKey="email" />
+      </Column>
+      <Column width={100}>
+        <HeaderCell>Location</HeaderCell>
+        <Cell dataKey="location" />
+      </Column>
+    </Table>
+  );
 }
