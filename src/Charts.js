@@ -1,4 +1,3 @@
-import { blue } from '@mui/material/colors';
 import React from 'react';
 import { VictoryChart, VictoryBar } from 'victory';
 const data = [
