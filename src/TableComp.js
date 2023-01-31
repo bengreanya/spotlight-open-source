@@ -18,7 +18,7 @@ export default function TableComp() {
         <HeaderCell>Name</HeaderCell>
         <Cell dataKey="name" />
       </Column>
-      <Column width={100}>
+      <Column width={200}>
         <HeaderCell>Email</HeaderCell>
         <Cell dataKey="email" />
       </Column>
