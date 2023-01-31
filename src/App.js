@@ -1,3 +1,4 @@
+import { Button } from '@mui/material';
 import { Link, Route, Switch } from 'react-router-dom';
 import './App.css';
 import Charts from './Charts.js';
@@ -7,8 +8,12 @@ function App() {
   return (
     <div className="App">
       <nav>
-        <Link to="/table">Table</Link>
-        <Link to="/charts">Charts</Link>
+        <Button variant="contained">
+          <Link to="/table">Table</Link>
+        </Button>
+        <Button variant="contained">
+          <Link to="/charts">Charts</Link>
+        </Button>
       </nav>
       <Switch>
         <Route path="/table">
